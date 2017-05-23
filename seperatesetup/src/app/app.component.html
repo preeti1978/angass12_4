@@ -1,0 +1,22 @@
+<h2>Using built-in pipes</h2>
+<table border="1">
+<tr>
+<th>Name</th><th>Hobby</th>
+</tr>
+<tr *ngFor ="let friend of friends">
+<td>{{friend.name|uppercase}}</td>
+<td>{{friend.hobby|lowercase}}</td>
+</tr>
+</table>
+
+<br>
+<h2>Using custom pipes</h2>
+<table border="1">
+<tr>
+<th>Name</th><th>Hobby</th>
+</tr>
+<tr *ngFor ="let friend of friends">
+<td>{{friend.name|customuppercase}}</td>
+<td>{{friend.hobby|customlowercase}}</td>
+</tr>
+</table>
